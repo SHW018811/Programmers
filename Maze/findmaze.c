@@ -55,7 +55,7 @@ int solution(const char* maps[], size_t maps_len) {
     while(cnt < 2){
         for(int i=0; i<maps_len; i++){
             for(int j=0; j<len; j++){
-                if(maze[i][j] == 'S'){
+                if(maze[i][j] == 'S' && cnt == 0){
                     start = (Pos){i,j};
                 }if(maze[i][j] == 'L' && cnt == 0){
                     end = (Pos){i, j};
